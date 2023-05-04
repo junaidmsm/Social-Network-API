@@ -4,6 +4,7 @@ const userController = {
   // /api/users
   // get all users
   getAllUser(req, res) {
+    console.log("GetAllUsers");
     User.find({})
       .select('-__v')
       .sort({ _id: -1 })
@@ -67,15 +68,17 @@ const userController = {
 
   //Delete user and users associated thoughts
   deleteUser({ params }, res) {
-    
+    console.log("deleteUser");
         User.findOneAndDelete({ _id: params.id })
           .then(dbUserData => {
+            console.log("dbUserData= ",dbUserData);
             if (!dbUserData) {
               res.status(404).json({ message: 'No User found with this id!' });
               return;
             }
             Thought.deleteMany({_id: { $in:  dbUserData.thoughts }})
             .then(() => {
+              console.log("UserAndThoughtsDeleted");
             res.json({message: 'User and associated Thoughts deleted'});
             })
           })
