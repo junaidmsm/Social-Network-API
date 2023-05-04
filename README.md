@@ -11,6 +11,7 @@ You can access more badges and their purposes at [shields.io](https://shields.io
 
 ## Table of Contents
   * [Installation](#installation)
+  * [Demo](#Demo)
   * [WalkthroughVideos](#walkthroughvideos)  
   * [Questions](#questions)
   * [License](#license)
@@ -30,7 +31,10 @@ You can access more badges and their purposes at [shields.io](https://shields.io
 ## Demo
 
 
- [Walkthrough Video](https://www.loom.com/embed/39f2a5cda2e743ddbbc8524907e0cb07)
+[Walkthrough Video]()
+[Walkthrough Video]()
+[Walkthrough Video]()
+[Walkthrough Video]()
 
 
 ## Questions
@@ -51,6 +55,6 @@ _This application has the MIT License._
   
 ## Contribution
 
-Original code source: https://github.com/coding-boot-camp/miniature-eureka
+Original code source: https://github.com/junaidmsm
     
 
